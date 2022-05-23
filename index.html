@@ -5,54 +5,142 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Caitlin Wu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("mynavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
 
 </head>
 <body>
 <!-- Navigation Bar Section -->
-<nav class="navbar">
-    <div class="navbar__container">
-        <a href="#home" id="navbar__logo">CAITLIN WU</a>
-        <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <div class="navbar" id="mynavbar">
+            <a href="#home" class="active" id="home-page">HOME</a>
+            <a href="#about" class="navbar__links" id="about-page">ABOUT</a>
+            <a href="#projects" class="navbar__links" id="projects-page">PROJECTS</a>
+            <a href="#education" class="navbar__links" id="education-page">EDUCATION</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="#home" class="navbar__links" id="home-page">HOME</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#about" class="navbar__links" id="about-page">ABOUT</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#projects" class="navbar__links" id="projects-page">PROJECTS</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#education" class="navbar__links" id="education-page">EDUCATION</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 
-    <h1>Caitlin Wu</h1>
+<div class="page_content">
+<div class="title">CAITLIN WU</div>
 
 <!-- About Me Section -->
-<div class="about" id="about">
-    <div class="about__container">
-        <h1>ABOUT ME</h1>
-        <p>stuff about me</p>
-    </div>
-</div>
+    <section class="about" id="about">
+        <div class="about__container"> <!-- contains terminal & pic -->
+            <!-- terminal section -->
+            <div class="terminal">
+                <div class="box__shadow">
+                    <div class="navigation">
+                        <div class="buttons">
+                            <span class="circle red"></span>
+                            <span class="circle yellow"></span>
+                            <span class="circle green"></span>
+                        </div>
+                        <div class="terminal__title">About Me</div>
+                    </div>
+                    <pre class="terminal__caption">
+                        Hello World!
+                        My name is Caitlin and I am currently a third year student at the University of British Columbia.
+                        cait@about:~$ >> ls hobbies
+                        <pre class="hobbies">
+                            cooking
+                            running
+                            guitar
+                            animal crossing
+                        </pre>cait@about:~$ >> ls resume
+                        <pre class="resume">
+                            <a href="src/Resume2021.pdf" class="links">resumePDF</a>
+                        </pre>cait@about:~$ >> ls contact
+                        <pre class="contact">
+                            <a href="https://www.linkedin.com/in/caitlinwu13" target="_blank" class="links">linkedin</a>
+                            <a href="https://github.com/cwu13" target="_blank" class="links">github</a>
+                            <a href="mailto:caitlinwu13@gmail.com" class="links">email</a>
+                        </pre>
+                    </pre>
+                </div>
+            </div>
 
-<!-- Projects Section-->
-<div class="project" id="projects">
-    <div class="projects__container">
-        <h1>PROJECTS</h1>
-        <div class="projects--links__container"></div>
-    </div>
-</div>
+            <!-- picture section -->
+            <img class="picture" src="png/src/picture.JPG"/>
 
+
+
+        </div>
+    </section>
+
+<!-- Education Section -->
+
+<section class="education" id="education">
+    <div class="education__content">
+    <div class="education__title">EDUCATION</div>
+    <div class="school">
+        <img class="ubclogo" src="png/src/ubc-logo.png">
+        <div class="school__cap">University of British Columbia<br>
+        <p>Bachelors of Science in Computer Science</p>
+            <p>Expected Graduation: Nov 2024</p>
+        </div>
+    </div>
+    <div class="education__container">
+        <div class="subtitle">Relevant Coursework</div>
+        <div class="courses">
+            <p>CPSC 110 - Computational Thinking</p>
+            <p>CPSC 121 - Models of Computation</p>
+            <p>CPSC 210 - Software Construction</p>
+            <p>CPSC 213 - Introduction to Computer Science</p>
+            <p>CPSC 221 - Basic Algorithms and Data Structures</p>
+            <p>CPSC 310 - Introduction to Software Engineering</p>
+            <p>CPSC 320 - Intermediate Algorithm Design and Analysis</p>
+
+            <p>MATH 200 - Calculus III</p>
+            <p>MATH 221 - Matrix Algebra</p>
+            <p>STAT 251 - Elementary Statistics</p>
+            <p>APSC 100 - Introduction to Engineering I</p>
+        </div>
+    </div>
+    </div>
+</section>
+
+    <!-- Projects Section-->
+    <section class="projects" id="projects">
+        <div class="title">PROJECTS</div>
+        <div class="projects__container">
+
+            <div class="cafe__wrap">
+                <img class="cafe-img" src="png/src/cafe.jpeg"/>
+                <div class="overlay">
+                    <div class="cafe__description">This is cafe project</div>
+                </div>
+            </div>
+
+            <div class="discord__wrap">
+                <img class="discord-img" src="png/src/discord.jpeg"/>
+                <div class="overlay">
+                    <div class="discord__description">This is discord project</div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="links-container">
+            <a href="https://www.linkedin.com/in/caitlinwu13" target="_blank"><img class ="linklogo" src="png/src/linkedin%20logo.png"></a>
+            <a href="https://github.com/cwu13" target="_blank"><img class="linklogo" src="png/src/github%20logo.png"></a>
+            <a href="mailto:caitlinwu13@gmail.com"><img class="linklogo" src="png/src/mail.png"></a>
+        </div>
+    </section>
+</div>
 
 </body>
 </html>
