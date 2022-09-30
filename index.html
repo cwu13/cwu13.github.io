@@ -23,21 +23,21 @@
 </head>
 <body>
 <!-- Navigation Bar Section -->
-        <div class="navbar" id="mynavbar">
-            <a href="#home" class="active" id="home-page">HOME</a>
-            <a href="#about" class="navbar__links" id="about-page">ABOUT</a>
-            <a href="#projects" class="navbar__links" id="projects-page">PROJECTS</a>
-            <a href="#education" class="navbar__links" id="education-page">EDUCATION</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-
+<div class="navbar" id="mynavbar">
+    <a href="#home" class="active" id="home-page" onclick="myFunction()">HOME</a>
+    <a href="#about" class="navbar__links" id="about-page" onclick="myFunction()">ABOUT</a>
+    <a href="#education" class="navbar__links" id="education-page" onclick="myFunction()">EDUCATION</a>
+    <a href="#projects" class="navbar__links" id="projects-page" onclick="myFunction()">PROJECTS</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <div class="name">CAITLIN WU</div>
+ </div>
+ <section class="home" id="home">
 <div class="page_content">
-<div class="title">CAITLIN WU</div>
-
 <!-- About Me Section -->
     <section class="about" id="about">
+        <div class="welcome-text">Welcome to my portfolio!</div>
         <div class="about__container"> <!-- contains terminal & pic -->
             <!-- terminal section -->
             <div class="terminal">
@@ -57,12 +57,12 @@
                         cait@about:~$ >> ls hobbies
                         <pre class="hobbies">
                             baking cakes
-                            running
+                            going on runs
                             animal crossing
                         </pre>cait@about:~$ >> ls resume
                         <pre class="resume">
-                            <a href="src/resume.pdf" class="links">resumePDF</a>
-                        </pre>cait@about:~$ >> ls contact
+                            <a href="src/resume.pdf" class="links">resume.pdf</a>
+                        </pre>cait@about:~$ >> ls contacts
                         <pre class="contact">
                             <a href="https://www.linkedin.com/in/caitlinwu13" target="_blank" class="links">linkedin</a>
                             <a href="https://github.com/cwu13" target="_blank" class="links">github</a>
@@ -74,9 +74,6 @@
 
             <!-- picture section -->
             <img class="picture" src="img/me.JPG"/>
-
-
-
         </div>
     </section>
 
@@ -143,10 +140,10 @@
         <div class="title">PROJECTS</div>
         <div class="projects__container">
 
-            <div class="datafile__wrap">
-                <img class="datafile-img" src="img/data file.webp"/>
+            <div class="proj__wrap">
+                <img class="proj-img" src="img/data file.webp"/>
                 <div class="overlay">
-                    <div class="datafile__description">
+                    <div class="proj__description">
                         <div class="proj-title">Data File Interpreter</div>
                         <div class="proj-info">Implemented a full-stack application to manage and query data files with university information. Utilized a trie data structure to parse through EBNF based queries.</div>
                         <div class="proj-tools">TypeScript, React, Node, Yarn, Mocha, Chai</div>
@@ -154,10 +151,10 @@
                 </div>
             </div>
 
-            <div class="pomodoro__wrap">
-                <img class="pomodoro-img" src="img/pomodoro.jpeg"/>
+            <div class="proj__wrap">
+                <img class="proj-img" src="img/pomodoro.jpeg"/>
                 <div class="overlay">
-                    <div class="pomodoro__description">
+                    <div class="proj__description">
                         <div class="proj-title">IOS Pomodoro Timer App</div>
                         <div class="proj-info">Developed a Pomodoro Timer App for focused work and study for IOS users. 
                             Designed storyboards compatible with several Apple devices.</div>
@@ -167,10 +164,10 @@
                 </div>
             </div>
 
-            <div class="portfolio__wrap">
-                <img class="portfolio-img" src="img/website.png"/>
+            <div class="proj__wrap">
+                <img class="proj-img" src="img/website.png"/>
                 <div class="overlay">
-                    <div class="portfolio__description">
+                    <div class="proj__description">
                         <div class="proj-title">Portfolio Website </div>
                         <div class="proj-info">Designed a portfolio website showcasing different projects and achievements. Hosted on Github pages!</div>
                         <a href="https://github.com/cwu13/cwu13.github.io" target="_blank" class="proj-link"><div class="proj-tools">Project Repo</div></a>
@@ -179,10 +176,10 @@
                 </div>
             </div>
 
-            <div class="cafe__wrap">
-                <img class="cafe-img" src="img/cafe.png"/>
+            <div class="proj__wrap">
+                <img class="proj-img" src="img/cafe.png"/>
                 <div class="overlay">
-                    <div class="cafe__description">
+                    <div class="proj__description">
                         <div class="proj-title">Café Menu App</div>
                         <div class="proj-info">Implemented a café menu application with a front-end that allows both patron and personnel usage.</div>
                         <a href="https://github.com/cwu13/Cafe-Menu-App" target="_blank" class="proj-link"><div class="proj-tools">Project Repo</div></a>
@@ -191,10 +188,10 @@
                 </div>
             </div>
 
-            <div class="discord__wrap">
-                <img class="discord-img" src="img/discord.jpeg"/>
+            <div class="proj__wrap">
+                <img class="proj-img" src="img/discord.jpeg"/>
                 <div class="overlay">
-                    <div class="discord__description">
+                    <div class="proj__description">
                         <div class="proj-title">Discord Schedule Bot</div>
                         <div class="proj-info">Created a Discord Schedule Bot that can be added by users to save, schedule, and view tasks entered into a channel.</div>
                         <a href="https://github.com/cwu13/Discord-Schedule-Bot" target="_blank" class="proj-link"><div class="proj-tools">Project Repo</div></a>
@@ -215,6 +212,7 @@
         </div>
     </section>
 </div>
+</section>
 
 </body>
 </html>
