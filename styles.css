@@ -92,43 +92,49 @@ html {
 #about {
     /*position: relative;*/
 
-    /*position: relative;*/
+    /* position: relative; */
+    /* display: inline-block; */
+
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* align-content: center; */
+    /* padding-bottom: 50px; */
+
+    /* flex-direction: row; */
+    /* overflow: hidden; */
+    /*padding-bottom: 100px;*/
+}
+
+
+.about__container {
+    position: relative;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    padding-bottom: 50px;
-    /*flex-direction: row;*/
-    /*overflow: hidden;*/
-    /*padding-bottom: 100px;*/
 }
 
-/*.about__container {*/
-/*    background: black;*/
-/*    color: white;*/
-/*    padding: 8px;*/
-/*    overflow: auto;*/
-/*}*/
 * {
     margin: 0;
     padding:0;
 }
 
 .terminal {
-    /*border-radius: 5px 5px 0 0;*/
-    /*position: relative;*/
+    /* position: relative; */
     /*width: 400px;*/
 
     padding-left: 30px;
+    padding-right: 30px;
     line-height: 23px;
     height: 390px;
-    width: 550px;
-    /*display: inline-block;*/
+    width: 850px;
+    /* display: inline-block; */
     float: left;
     margin: 20px;
-    /*border-radius: 5px;*/
-    /*overflow: hidden;*/
+    /* overflow: hidden; */
     /*padding-bottom: 25px;*/
 }
 
@@ -139,7 +145,8 @@ html {
     color: white;
     text-align: left;
     white-space: pre-line;
-    /*overflow: hidden;*/
+    overflow: hidden;
+    border-radius: 0 0 5px 5px;
 }
 
 .hobbies {
@@ -206,6 +213,7 @@ html {
 
 .box__shadow {
     box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+    border-radius: 5px;
 }
 
 .picture {
@@ -216,7 +224,7 @@ html {
     border-radius: 5px;
 }
 
-/*Projects*/
+/* Projects */
 
 .projects__container {
     /*background-color: #7E7474;*/
@@ -228,7 +236,7 @@ html {
     align-content: center;
 }
 
-.cafe__wrap, .discord__wrap {
+.cafe__wrap, .discord__wrap, .pomodoro__wrap, .datafile__wrap, .portfolio__wrap {
     position: relative;
     height: 250px;
     width: 250px;
@@ -237,7 +245,7 @@ html {
     margin: 30px;
 }
 
-.cafe-img, .discord-img {
+.cafe-img, .discord-img, .pomodoro-img, .datafile-img, .portfolio-img {
     border-radius: 25px;
     width: 250px;
     height: 250px;
@@ -250,21 +258,20 @@ html {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: darkgray;
+    background-color: rgb(221, 218, 218);
     overflow: hidden;
     width: 100%;
     height: 0;
     transition: .5s ease;
 }
 
-.cafe__wrap:hover .overlay, .discord__wrap:hover .overlay {
+.cafe__wrap:hover .overlay, .discord__wrap:hover .overlay, .pomodoro__wrap:hover .overlay, .datafile__wrap:hover .overlay, .portfolio__wrap:hover .overlay {
     height: 100%;
     opacity: 0.9;
 }
 
-.cafe__description, .discord__description{
-    color: white;
-    font-size: 20px;
+.cafe__description, .discord__description, .pomodoro__description, .datafile__description, .portfolio__description {
+    color: rgb(53, 52, 52);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -272,15 +279,45 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 80%;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: nobel, sans-serif;
 }
+
+.proj-title {
+    font-size: 18px;
+    /* font-family: nobel, sans-serif; */
+}
+
+.proj-info {
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.proj-tools {
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+.proj-link {
+    color: rgb(53, 52, 52);
+    text-decoration: none;
+}
+
+.proj-link:hover {
+    color:rgb(107, 105, 105);
+ }
+/* Education */
 
 .education {
     background-color: #7E7474;
-    /*text-align: center;*/
+    /* text-align: center; */
     /*position: relative;*/
-    height: 750px;
-    /*align-content: center;*/
-    /*align-content: flex-start;*/
+    height: 980px;
+    align-content: center;
+    /* align-content: flex-start; */
 }
 .education__content {
 /*    position: absolute;*/
@@ -296,6 +333,7 @@ html {
 .education__title{
     font-size: 30px;
     font-family: nobel, sans-serif;
+    /* font-family: Baskerville; */
     color: white;
     font-weight: 100;
     padding-top: 40px;
@@ -308,23 +346,47 @@ html {
 
 .school__cap {
     float: right;
-    font-size: 18px;
-    /*font-family: nobel, sans-serif;*/
-    color: white;
+    /* font-size: 18px; */
+    /* font-family: nobel, sans-serif; */
     font-family: Baskerville;
+    color: white;
     font-weight: 100;
-    padding-top: 30px;
+    padding-top: 25px;
+}
+
+.school-name {
+    font-size: 20px;
+    color: white;
+    font-weight: 100;
+}
+
+.degree {
+    font-size: 18px;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    font-weight: 100; 
+}
+
+.graduation {
+    font-size: 16px;
 }
 
 .ubclogo {
-    width: 125px;
+    width: 92px;
     padding-top: 20px;
     float: left;
 }
 
+.education__container {
+    text-align: -webkit-left;
+    font-family: Baskerville;
+    /* font-family: nobel, sans-serif; */
+}
+
 .subtitle{
     font-size: 20px;
-    font-family: nobel, sans-serif;
+    text-align: -webkit-left;
     color: white;
     font-weight: 100;
     padding-top: 15px;
@@ -332,22 +394,41 @@ html {
 
 .subsubtitle {
     font-size: 18px;
-    font-family: nobel, sans-serif;
+    /* font-family: nobel, sans-serif; */
+    font-family: Baskerville;
     color: white;
     font-weight: 100;
     padding-top: 0px;
 }
 
 .courses {
-    /*text-align: -webkit-left;*/
-    /*align-items: flex-start;*/
+    text-align: -webkit-left;
+    /* align-items: flex-start; */
     display: inline-block;
     font-family: Baskerville;
+    /* font-family: nobel, sans-serif; */
     color: white;
     font-weight: 100;
-    padding-top: 20px;
+    padding-top: 5px;
     font-size: 18px;
 }
+
+.progress {
+    padding-top: 18px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
 
 .footer {
     background-color: lightgray;
@@ -356,13 +437,21 @@ html {
 }
 
 .links-container {
-    -webkit-align-content: center;
-    margin-left: 20px;
+    align-content: center;
+    /* margin-left: 20px; */
 }
 
 .linklogo {
     max-width: 35px;
     object-fit: cover;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
+.footer-caption {
+    color: #7E7474;
+    font-family: nobel, sans-serif;
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
+}

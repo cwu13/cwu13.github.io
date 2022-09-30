@@ -7,6 +7,8 @@
     <title>Caitlin Wu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ufg7hqz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet" type='text/css'>
     <script>
         function myFunction() {
             var x = document.getElementById("mynavbar");
@@ -49,17 +51,17 @@
                         <div class="terminal__title">About Me</div>
                     </div>
                     <pre class="terminal__caption">
+                        cait@about:~$ >> cat caitlin.txt
                         Hello World!
-                        My name is Caitlin and I am currently a third year student at the University of British Columbia.
+                        My name is Caitlin and I am currently a third year student at the University of British Columbia in Vancouver, Canada!
                         cait@about:~$ >> ls hobbies
                         <pre class="hobbies">
-                            cooking
+                            baking cakes
                             running
-                            guitar
                             animal crossing
                         </pre>cait@about:~$ >> ls resume
                         <pre class="resume">
-                            <a href="src/Resume2021.pdf" class="links">resumePDF</a>
+                            <a href="src/resume.pdf" class="links">resumePDF</a>
                         </pre>cait@about:~$ >> ls contact
                         <pre class="contact">
                             <a href="https://www.linkedin.com/in/caitlinwu13" target="_blank" class="links">linkedin</a>
@@ -71,7 +73,7 @@
             </div>
 
             <!-- picture section -->
-            <img class="picture" src="png/src/picture.JPG"/>
+            <img class="picture" src="img/me.JPG"/>
 
 
 
@@ -84,28 +86,54 @@
     <div class="education__content">
     <div class="education__title">EDUCATION</div>
     <div class="school">
-        <img class="ubclogo" src="png/src/ubc-logo.png">
-        <div class="school__cap">University of British Columbia<br>
-        <p>Bachelors of Science in Computer Science</p>
-            <p>Expected Graduation: Nov 2024</p>
+        <img class="ubclogo" src="img/ubc.png">
+        <div class="school__cap">
+            <div class="school-name">University of British Columbia</div>
+            <div class="degree">Bachelors of Science in Computer Science</div>
+            <div class="graduation">Expected Graduation: May 2024</div>
         </div>
+        <!-- <div class="school__cap">University of British Columbia<br>
+        <p>Bachelors of Science in Computer Science</p>
+            <p>Expected Graduation: May 2024</p>
+        </div> -->
     </div>
     <div class="education__container">
         <div class="subtitle">Relevant Coursework</div>
         <div class="courses">
-            <p>CPSC 110 - Computational Thinking</p>
-            <p>CPSC 121 - Models of Computation</p>
-            <p>CPSC 210 - Software Construction</p>
-            <p>CPSC 213 - Introduction to Computer Science</p>
-            <p>CPSC 221 - Basic Algorithms and Data Structures</p>
-            <p>CPSC 310 - Introduction to Software Engineering</p>
-            <p>CPSC 320 - Intermediate Algorithm Design and Analysis</p>
-
-            <p>MATH 200 - Calculus III</p>
-            <p>MATH 221 - Matrix Algebra</p>
-            <p>STAT 251 - Elementary Statistics</p>
-            <p>APSC 100 - Introduction to Engineering I</p>
+            <ul>
+                <li>Computational Thinking (CPSC 110)</li>
+                <li>Models of Computation (CPSC 121)</li>
+                <li>Software Construction (CPSC 210)</li>
+                <li>Introduction to Computer Science (CPSC 213)</li>
+                <li>Basic Algorithms and Data Structures (CPSC 221)</li>
+                <li>Introduction to Software Engineering (CPSC 310)</li>
+                <li>Intermediate Algorithm Design and Analysis (CPSC 320)</li>
+                <li>Computer Hardware and Operating Systems (CPSC 313) *</li>
+                <li>Internet Computing (CPSC 317) *</li>
+                <li>Introduction to Artificial Intelligence (CPSC 322) *</li>
+                <li>Machine Learning and Data Mining (CPSC 340) *</li>
+                <li>Differential Calculus with Applications (MATH 100)</li>
+                <li>Integral Calculus with Applications (MATH 101)</li>
+                <li>Calculus III (MATH 200)</li>
+                <li>Matrix Algebra (MATH 221)</li>
+                <li>Elementary Statistics (STAT 251)</li>
+            </ul>
         </div>
+        <div class="subtitle">Other Courses</div>
+        <div class="courses">
+            <ul>
+                <li>Introduction to Engineering I (APSC 100)</li>
+                <li>Introductory Physics for Engineers I (PHYS 157)</li>
+                <li>Mechanics I (PHYS 170)</li>
+                <li>Chemistry for Engineering (CHEM 154)</li>
+                <li>Introduction to Engineering I (APSC 100)</li>
+                <li>Principles of Microeconomics (ECON 310)</li>
+                <li>Principles of Macroeconomics (ECON 311)</li>
+                <li>Applied Meteorology (ATSC 113)</li>
+                <li>Family Context of Human Development (FMST 210)</li>
+            </ul>
+        </div>
+        <div class="progress">* In Progress</div>
     </div>
     </div>
 </section>
@@ -115,29 +143,75 @@
         <div class="title">PROJECTS</div>
         <div class="projects__container">
 
-            <div class="cafe__wrap">
-                <img class="cafe-img" src="png/src/cafe.jpeg"/>
+            <div class="datafile__wrap">
+                <img class="datafile-img" src="img/data file.webp"/>
                 <div class="overlay">
-                    <div class="cafe__description">This is cafe project</div>
+                    <div class="datafile__description">
+                        <div class="proj-title">Data File Interpreter</div>
+                        <div class="proj-info">Implemented a full-stack application to manage and query data files with university information. Utilized a trie data structure to parse through EBNF based queries.</div>
+                        <div class="proj-tools">TypeScript, React, Node, Yarn, Mocha, Chai</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pomodoro__wrap">
+                <img class="pomodoro-img" src="img/pomodoro.jpeg"/>
+                <div class="overlay">
+                    <div class="pomodoro__description">
+                        <div class="proj-title">IOS Pomodoro Timer App</div>
+                        <div class="proj-info">Developed a Pomodoro Timer App for focused work and study for IOS users. 
+                            Designed storyboards compatible with several Apple devices.</div>
+                        <a href="https://github.com/cwu13/PomodoroTimerApp" target="_blank" class="proj-link"><div class="proj-tools">Project Repo</div></a>
+                        <div class="proj-tools">Swift, XCode, UIKit</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__wrap">
+                <img class="portfolio-img" src="img/website.png"/>
+                <div class="overlay">
+                    <div class="portfolio__description">
+                        <div class="proj-title">Portfolio Website </div>
+                        <div class="proj-info">Designed a portfolio website showcasing different projects and achievements. Hosted on Github pages!</div>
+                        <a href="https://github.com/cwu13/cwu13.github.io" target="_blank" class="proj-link"><div class="proj-tools">Project Repo</div></a>
+                        <div class="proj-tools">HTML, CSS, JavaScript</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cafe__wrap">
+                <img class="cafe-img" src="img/cafe.png"/>
+                <div class="overlay">
+                    <div class="cafe__description">
+                        <div class="proj-title">Café Menu App</div>
+                        <div class="proj-info">Implemented a café menu application with a front-end that allows both patron and personnel usage.</div>
+                        <a href="https://github.com/cwu13/Cafe-Menu-App" target="_blank" class="proj-link"><div class="proj-tools">Project Repo</div></a>
+                        <div class="proj-tools">Java, JUnit, JSON, GUI</div>
+                    </div>
                 </div>
             </div>
 
             <div class="discord__wrap">
-                <img class="discord-img" src="png/src/discord.jpeg"/>
+                <img class="discord-img" src="img/discord.jpeg"/>
                 <div class="overlay">
-                    <div class="discord__description">This is discord project</div>
+                    <div class="discord__description">
+                        <div class="proj-title">Discord Schedule Bot</div>
+                        <div class="proj-info">Created a Discord Schedule Bot that can be added by users to save, schedule, and view tasks entered into a channel.</div>
+                        <a href="https://github.com/cwu13/Discord-Schedule-Bot" target="_blank" class="proj-link"><div class="proj-tools">Project Repo</div></a>
+                        <div class="proj-tools">Python, JSON, Discord</div>
+                    </div>
                 </div>
             </div>
-
 
         </div>
     </section>
 
     <section class="footer" id="footer">
         <div class="links-container">
-            <a href="https://www.linkedin.com/in/caitlinwu13" target="_blank"><img class ="linklogo" src="png/src/linkedin%20logo.png"></a>
-            <a href="https://github.com/cwu13" target="_blank"><img class="linklogo" src="png/src/github%20logo.png"></a>
-            <a href="mailto:caitlinwu13@gmail.com"><img class="linklogo" src="png/src/mail.png"></a>
+            <a href="https://www.linkedin.com/in/caitlinwu13" target="_blank"><img class ="linklogo" src="img/linkedin%20logo.png"></a>
+            <a href="https://github.com/cwu13" target="_blank"><img class="linklogo" src="img/github%20logo.png"></a>
+            <a href="mailto:caitlinwu13@gmail.com"><img class="linklogo" src="img/mail.png"></a>
+            <div class="footer-caption">Made by Caitlin Wu :)</div>
         </div>
     </section>
 </div>
