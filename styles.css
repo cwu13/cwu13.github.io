@@ -189,13 +189,13 @@ html {
     border-radius: 0 0 5px 5px;
 }
 
-.hobbies {
+.hobbies, .resume {
     padding-left: 25px;
     text-align: left;
     white-space: pre-line;
 }
 
-.contact, .resume {
+.contact{
     padding-left: 25px;
     text-align: left;
     white-space: pre-line;
